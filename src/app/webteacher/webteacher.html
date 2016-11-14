@@ -1,0 +1,30 @@
+<nar>headWeb loading..</nar>
+<slider>slide loading...</slider>
+<gridview [studentList]="students">
+</gridview>
+<div *ngIf="check == 0" class="alert alert-danger">
+	<strong>Fails!</strong> You don't full fill the form'
+</div>
+<div *ngIf="check == 1" class="alert alert-success">
+	<strong>Success!</strong> insert complete
+</div>
+<div class="well col-md-offset-2 col-sm-8">
+	<div class="row well-sm">
+		<label class="col-sm-2" for="firsname">Firsname:</label>
+		<input class="col-sm-3" name="firsname" #newfirsname>
+		<label class="col-sm-2 col-md-offset-1" for="lastname">Lastname:</label>
+		<input class="col-sm-3" name="lastname" #newlastname>
+	</div>
+	<div class="row well-sm col-md-offset-3">
+		<label class="col-sm-3 text-right" for="dob">Day of birth:</label>
+		<input class="col-sm-4" type="date" name="dob" #newdob>
+	</div>
+	<div class="row well-sm">
+		<label class="col-sm-2" for="mathematic">Mathematic:</label>
+		<input class="col-sm-3" name="mathematic" #newmathematic>
+		<label class="col-sm-2 col-md-offset-1" for="physic">Physic:</label>
+		<input class="col-sm-3" name="physic" #newphysic>
+	</div>
+</div>
+<button class="col-lg-1 col-offset-6 centered" type="button" (click)="addStudent(newfirsname, newlastname, newdob, newmathematic, newphysic)"
+	class="btn btn-info col-md-offset-6">Insert</button>

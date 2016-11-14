@@ -1,0 +1,10 @@
+.forminsert{
+    width: 70%;
+    margin:  0px auto;
+    border: 1px solid;
+    height: 3em;
+}
+input{
+    width: 3em;
+    margin: 0 3em 1em 1.5em;
+}

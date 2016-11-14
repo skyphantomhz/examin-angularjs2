@@ -1,0 +1,21 @@
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>DoB</th>
+            <th (click)="sortAverage()" style="cursor: pointer">Average</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of studentList">
+            <td>{{student.ID}}</td>
+            <td>{{student.firstName}}</td>
+            <td>{{student.lastName}}</td>
+            <td>{{student.doB}}</td>
+            <td>{{student.average}}</td>
+            <td>{{student.status}}</td>
+        </tr>
+    </tbody>
